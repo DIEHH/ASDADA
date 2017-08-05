@@ -1,0 +1,188 @@
+/**app.wxss**/
+.header{
+  height:3rem;
+  width:100%;
+  position:fixed;
+  top:0;
+  background: #5fa124;
+  border-bottom:0.2rem solid red;
+}
+
+.container{
+  padding: 3.3rem 0 3.3rem 0;
+}
+
+.nav{
+  height:2rem;
+  width:100%;
+  position:fixed;
+  bottom:0;
+  display:flex;
+  justify-content: space-around;
+  border-top:#5fa124 solid 2px;
+  padding-top:4px;
+  background: #fff;
+  font-size: 12px;
+}
+.nav view{
+  width:20%;
+  line-height: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  color:#5fa124;
+}
+.nav view:not(.phone) text{
+  height:1rem;
+  width:100%;
+  line-height:1rem;
+}
+.nav view:not(.phone) text:nth-child(2){
+  margin-top:-0.5rem;
+}
+.nav .phone {
+  border:2px solid #5fa124;
+  width:3rem;
+  height:3rem;
+  border-radius:50%;
+  background: #fff;
+  position:absolute;
+  bottom:0;
+  line-height: 3rem;
+  
+}
+
+.nav .phone text{
+  font-size: 36px;
+}
+
+.classify{
+  position: absolute;
+  top:3.2rem;
+  width:100%;
+}
+.classify .tab{
+  display: flex;
+  background: #eee;
+  width:30%;
+
+
+}
+
+
+
+
+@font-face {
+  font-family: 'iconfont';  /* project id 374779 */
+  src: url('//at.alicdn.com/t/font_gp34y245ciazto6r.eot');
+  src: url('//at.alicdn.com/t/font_gp34y245ciazto6r.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_gp34y245ciazto6r.woff') format('woff'),
+  url('//at.alicdn.com/t/font_gp34y245ciazto6r.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_gp34y245ciazto6r.svg#iconfont') format('svg');
+}
+
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:18px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-zuojiantou:before { content: "\3433"; } /*左箭头*/
+
+.icon-fangdajing:before { content: "\e634"; } /*放大镜*/
+
+.icon-jian:before { content: "\e6af"; } /*减号*/
+
+.icon-phone:before { content: "\e672"; } /*手机*/
+
+.icon-shouyetubiaoxuanzhong:before { content: "\e600"; } /*这才是左箭头，上面那货是假的*/
+
+.icon-zhaopin:before { content: "\e605"; } /*招聘*/
+
+.icon-jumingpin:before { content: "\e601"; } /*选中*/
+
+.icon-phonehandle:before { content: "\e773"; }  /*手机2*/
+
+.icon-didiantubiao:before { content: "\e60e"; } /*地图*/
+
+.icon-gongcheng:before { content: "\e61c"; } /*工程*/
+
+.icon-gushi:before { content: "\e63f"; } /*故事*/
+
+.icon-peizhi:before { content: "\e63e"; } /*配置*/
+
+.icon-fenlei:before { content: "\e61a"; } /*分类*/
+
+.icon-qiyewenhua:before { content: "\e622"; } /*企业文化*/
+
+.icon-hot:before { content: "\e6ae"; } /*hot(火)*/
+
+.icon-gongsidongtai:before { content: "\e607"; } /*公司动态*/
+
+.icon-vip3:before { content: "\e606"; } /*vip3*/
+
+.icon-vip2:before { content: "\e608"; } /*vip2*/
+
+.icon-vip1:before { content: "\e609"; } /*vip1*/
+
+.icon-mingpin:before { content: "\e73a"; } /*名品*/
+
+.icon-jisuanqi:before { content: "\e659"; }  /*计算器*/
+
+.icon-lianxiwomen:before { content: "\e60a"; }  /*联系我们*/
+
+.icon-riji2:before { content: "\e7cc"; } /*日记*/
+
+.icon-shejilinian:before { content: "\e7d8";} /*设计理念*/
+
+.icon-renwu:before { content: "\e6a6"; }  /*任务*/
+
+.icon-zhaokecheng:before { content: "\e60b"; }  /*找课程*/
+
+.icon-gongdi-:before { content: "\e627"; }  /*工地*/
+
+.icon-shipin:before { content: "\e60c"; }  /*视频*/
+
+.icon-jiankang:before { content: "\e621"; }  /*健康理念*/
+
+.icon-tupian:before { content: "\e636"; }  /*图片demo*/
+
+.icon-gonglve:before { content: "\e629"; }  /*家装攻略*/
+
+.icon-shouye:before { content: "\e61d"; }  /*首页*/
+
+.icon-liucheng:before { content: "\e642"; }  /*流程*/
+
+.icon-renshiguanli:before { content: "\e658"; }  /*人事图标（用在有人头的地方）*/
+
+.icon-gongren:before { content: "\e6ca"; }  /*工人（用在戴帽子的人头的地方）*/
+
+.icon-fuwu:before { content: "\e505"; }  /*服务*/
+
+.icon-kefu:before { content: "\e7bf"; }  /*客服*/
+ 
+.icon-hexinrencai:before { content: "\e699"; } /*核心*/
+
+.icon-jia:before { content: "\e9a5"; }  /*加号*/
+
+.icon-quo:before { content: "\e602"; } /*服务优势*/
+
+.icon-cloud-we:before { content: "\e650"; } /*很多小人（用于团队）*/
+
+.icon-arrow-circle-o-right:before { content: "\e523"; }  /*我也不知道这是什么鬼*/
+
+.icon-gongju:before { content: "\e637"; }  /*工具*/
+
+.icon-quanjing:before { content: "\e60f"; }  /*720全景*/
+
+.icon-jinrong:before { content: "\e638"; }  /*金融*/
+
+.icon-loupan:before { content: "\e502"; }  /*楼盘*/
+
+.icon-qiyerongyu:before { content: "\e62a"; }  /*企业荣誉*/
+
+.icon-wenda:before { content: "\e63a"; }  /*问答*/
+

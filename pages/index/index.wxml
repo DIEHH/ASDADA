@@ -1,0 +1,49 @@
+<!--index.wxml-->
+
+<view class="header">
+
+</view>
+
+<view class="container">
+
+</view>
+
+<view class="nav">
+
+  <view class="index">
+    <text class="iconfont icon-shouye"></text>
+    <text>首页</text>
+  </view>
+
+  <view class="classify">
+    <text class="iconfont icon-fenlei"></text>
+    <text>分类</text>
+  </view>
+<view></view>
+  <view class="phone">
+    <text class="iconfont icon-phonehandle"></text>
+  </view>
+
+  <view class="service">
+    <text class="iconfont icon-kefu"></text>
+    <text>客服</text>
+  </view>
+
+  <view class="quote">
+    <text class="iconfont icon-zhaokecheng"></text>
+    <text>报价</text>
+  </view>
+
+</view>
+
+<view class="classify">
+  <view class="tab" wx:for="{{tab}}">
+      <view>{{item.title}}</view>
+      <view wx:for="{{item.list}}" wx:for-item="listItem">
+        <view>
+          <text class="{{icon}}"></text>
+          <text>{{listItem.name}}</text>
+        </view>
+      </view>
+  </view>
+</view>
